@@ -53,7 +53,7 @@
         "/Users/MattBrown/development/mcp-poc/dynamic-openapi/build/index.js"
       ],
       "env": {
-        "BLOOMERANG_API_KEY": "e20e7b7a-2541-9ed0-9cf9-16ace49f1518"
+        "BLOOMERANG_API_KEY": "ADD_YOUR_KEY_HERE"
       }
     },
     "postgres": {
@@ -66,7 +66,7 @@
         "--access-mode=unrestricted"
       ],
       "env": {
-        "DATABASE_URI": "postgresql://claude:aiIsSoCool#*@localhost:5432/mcp_data"
+        "DATABASE_URI": "ADD_YOUR_KEY_HERE"
       }
     }
   }
