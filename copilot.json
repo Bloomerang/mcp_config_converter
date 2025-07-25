@@ -1,0 +1,64 @@
+{
+  "servers": {
+    "atlassian": {
+      "type": "http",
+      "url": "https://mcp.atlassian.com/v1/sse",
+      "gallery": true
+    },
+    "notionMCP": {
+      "type": "http",
+      "url": "https://mcp.notion.com/sse",
+      "gallery": true
+    },
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "gallery": true
+    },
+    "figma": {
+      "type": "http",
+      "url": "http://127.0.0.1:3845/sse",
+      "gallery": true
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ],
+      "gallery": true
+    },
+    "sentry": {
+      "type": "http",
+      "url": "https://mcp.sentry.dev/mcp",
+      "gallery": true
+    },
+    "bloomerang-api": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/Users/MattBrown/development/mcp-poc/dynamic-openapi/build/index.js"
+      ],
+      "gallery": true,
+      "env": {
+        "BLOOMERANG_API_KEY": "PLEASE_SET_YOUR_VARIABLE"
+      }
+    },
+    "postgres": {
+      "type": "stdio",
+      "command": "/opt/homebrew/bin/uv",
+      "args": [
+        "run",
+        "--directory",
+        "/Users/MattBrown/delete_me/ticket_analysis",
+        "postgres-mcp",
+        "--access-mode=unrestricted"
+      ],
+      "gallery": true,
+      "env": {
+        "DATABASE_URI": "PLEASE_SET_YOUR_VARIABLE"
+      }
+    }
+  },
+  "inputs": []
+}

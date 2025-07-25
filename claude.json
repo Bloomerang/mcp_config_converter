@@ -1,0 +1,73 @@
+{
+  "globalShortcut": "",
+  "mcpServers": {
+    "atlassian": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.atlassian.com/v1/sse"
+      ]
+    },
+    "notionMCP": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.notion.com/sse"
+      ]
+    },
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://api.githubcopilot.com/mcp/"
+      ]
+    },
+    "figma": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "http://127.0.0.1:3845/sse"
+      ]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    },
+    "sentry": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.sentry.dev/mcp"
+      ]
+    },
+    "bloomerang-api": {
+      "command": "node",
+      "args": [
+        "/Users/MattBrown/development/mcp-poc/dynamic-openapi/build/index.js"
+      ],
+      "env": {
+        "BLOOMERANG_API_KEY": "e20e7b7a-2541-9ed0-9cf9-16ace49f1518"
+      }
+    },
+    "postgres": {
+      "command": "/opt/homebrew/bin/uv",
+      "args": [
+        "run",
+        "--directory",
+        "/Users/MattBrown/delete_me/ticket_analysis",
+        "postgres-mcp",
+        "--access-mode=unrestricted"
+      ],
+      "env": {
+        "DATABASE_URI": "postgresql://claude:aiIsSoCool#*@localhost:5432/mcp_data"
+      }
+    }
+  }
+}
